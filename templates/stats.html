@@ -1,0 +1,149 @@
+{% extends "index.html" %}
+{% block content %}
+
+
+</div class="Education-info">
+
+<div class="Education-title">
+    <h1>Education Stats</h1>
+    <button class="reset" type="button" onclick="javascript:dc.filterAll();dc.renderAll();">Reset</button>
+    <button class="reset" type="button" autofocus onclick="javascript:introJs().start();">More</button>
+</div>
+<div id="Education-info">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<hr>
+
+<div  id="outer" class="container-fluid">
+
+       <div class="col-sm-9">
+           <div class="row">
+
+               <!-- Time Chart -->
+               <div class="col-sm-12">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Total Donations per year
+                       </div>
+                       <div class="chart-stage">
+                           <div id="time-chart" data-step="1" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Time Chart -->
+
+               <!-- State chart -->
+               <div class="col-sm-12">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Number of Donations per State
+                       </div>
+                       <div class="chart-stage">
+                           <div id="map-chart" data-step="2" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- State chart -->
+
+               <!-- Resources -->
+               <div class="col-sm-6">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Resources Type
+                       </div>
+                       <div class="chart-stage">
+                           <div id="resource-type-row-chart" data-step="3" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Resources -->
+
+               <!-- Poverty -->
+               <div class="col-sm-6">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Poverty Level
+                       </div>
+                       <div class="chart-stage">
+                           <div id="poverty-level-row-chart" data-step="4" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Poverty -->
+
+
+
+           </div>
+       </div>
+
+
+       <!-- menu select -->
+       <div class="col-sm-3">
+           <div class="chart-wrapper">
+               <div class="chart-title">
+                   Donation State
+               </div>
+               <div class="chart-stage">
+                   <div id="menu-select" data-step="5" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="bottom"></div>
+               </div>
+           </div>
+       </div>
+       <!-- menu select -->
+
+       <!-- Metric 1 -->
+       <div class="col-sm-3">
+           <div class="chart-wrapper">
+               <div class="chart-title">
+                   Total Number of Donations
+               </div>
+               <div class="chart-stage total-number-don" >
+                   <div id="number-projects-nd" data-step="6" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+               </div>
+           </div>
+       </div>
+       <!-- Metric 1 -->
+
+       <!-- Metric 2 -->
+       <div class="col-sm-3">
+           <div class="chart-wrapper">
+               <div class="chart-title">
+                   Total Donations in USD
+               </div>
+               <div class="chart-stage">
+                   <div id="total-donations-nd" data-step="7" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+               </div>
+           </div>
+       </div>
+       <!-- Metric 2 -->
+
+        <!-- Metric 3 -->
+       <div class="col-sm-3">
+           <div class="chart-wrapper">
+               <div class="chart-title">
+                   Average Donation in USD
+               </div>
+               <div class="chart-stage">
+                   <div id="average-donations-nd" data-step="8" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+               </div>
+           </div>
+       </div>
+       <!-- Metric 3 -->
+
+        <!-- funding Pie -->
+           <div class="col-sm-3">
+               <div class="chart-wrapper">
+                   <div class="chart-title">
+                       Funding Status
+                   </div>
+                   <div class="chart-stage">
+                       <div id="funding-chart" data-step="9" data-intro="Vote for me and I will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." style="font-weight: normal" data-position="top"></div>
+                   </div>
+               </div>
+           </div>
+       <!-- funding Pie -->
+
+   </div>
+
+
+{% endblock %}
+

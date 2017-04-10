@@ -1,0 +1,195 @@
+.home {
+   display: flex;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .home {
+    flex-wrap: wrap;
+  }
+}
+#Education-info {
+   text-align: center;
+   padding: 10px 15% 20px 15%;
+}
+.home-title {
+   font-size: 80px;
+}
+h3#thankyou {
+   color: #999;
+   font-size: 20px;
+}
+.home-picture{
+   /*background-color: #2a6496;
+   width: 300px;
+   height: 300px;
+   border-radius: 100%;
+   margin: 2% 3% 0 2%;*/
+   display: flex;
+   align-items: center;
+}
+.home-picture>img {
+   border-radius: 100%;
+   width: 300px;
+   height: 300px;
+}
+@media (max-width: 600px) {
+  .home-picture>img {
+    margin-top: 30px;
+  }
+}
+.social-med {
+   height: 20px;
+   width: 20px;
+}
+.home-info {
+   text-align: center;
+   padding: 20px 50px;
+}
+.footer {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+/*****************************/
+.Education-title {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+.hidden {
+    display: none;
+}
+#tooltip {
+    position: absolute;
+    z-index: 1000000;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 3px;
+    font-weight: bold;
+}
+p.nav-governor{
+   color: #adadad; !important;
+   margin-left: 6px;
+}
+@media (max-width: 600px) {
+  p.nav-governor {
+    display: none;
+  }
+}
+.navbar-brand{
+   color: #222222;
+   display: flex;
+}
+.navbar-header{
+   width: 100%;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+@media (max-width: 600px) {
+  .navbar-header {
+     justify-content: center;
+     margin-right: 0 !important;
+     margin-left: 0 !important;
+  }
+}
+button.reset {
+   height: 30px; !important;
+   margin-left: 20px;
+   bottom: 10px;
+   border-radius: 5px;
+   background-color: rgba(26, 24, 35, 0.41);
+   color: white;
+   border: none;
+   padding-right: 10px;
+   padding-left: 10px;
+   margin-bottom: 15px;
+
+}
+button.reset:hover {
+   background-color: #333;
+}
+body {
+   /*min-width: 850px;*/
+}
+.menu {
+   float: right;
+   margin-right: 40px;
+   margin-bottom: 0;
+}
+.menu li {
+   display: inline;
+}
+.menu li + li {
+   margin-left: 35px;
+}
+.menu li a {
+   color: #999;
+   text-decoration: none;
+}
+.menu>li>a:hover {
+   color: white;
+}
+#menu-select{
+   margin: 8px 0 8px 3px;
+}
+#funding-chart {
+   margin: 15px auto;
+}
+.text-muted{
+   margin-right: 20px;
+   margin-bottom: 0;
+}
+#number-projects-nd, #total-donations-nd, #average-donations-nd {
+   font-size: 60px;
+}
+
+#outer {
+   margin: 0 5%;
+}
+
+.dc-chart g.row text {
+   fill: black;
+   font-size: 12px;
+}
+
+#total-projects,#net-donations {
+   background: #CC1520;
+   width: 200px;
+   position: relative;
+   height: 60px;
+   font-size: 29px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0px;
+}
+
+.total-number-don {
+   background: #CC1520;
+   position: relative;
+   font-size: 29px;
+   vertical-align: middle;
+   color: white;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0px;"
+}
+
+.dc-select-menu {
+   background: #CC1520;
+   width: 100%;
+   border: none;
+   position: relative;
+   height: 31px;
+   font-size: 15px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 4px;
+   padding-bottom: 0px;
+
+}
