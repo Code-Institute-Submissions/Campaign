@@ -164,8 +164,6 @@ function makeGraphs(error, projectsJson) {
        .width(825)
        .height(200)
        .margins({top: 10, right: 50, bottom: 30, left: 50})
-       //.dimension(dateDim)
-       //.group(numProjectsByDate)
        .dimension(dateDim)
        .group(totalDonationsByDate)
        .transitionDuration(500)

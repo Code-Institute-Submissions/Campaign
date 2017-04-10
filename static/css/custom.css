@@ -21,11 +21,6 @@ h3#thankyou {
    font-size: 20px;
 }
 .home-picture{
-   /*background-color: #2a6496;
-   width: 300px;
-   height: 300px;
-   border-radius: 100%;
-   margin: 2% 3% 0 2%;*/
    display: flex;
    align-items: center;
 }
@@ -82,6 +77,11 @@ p.nav-governor{
    color: #222222;
    display: flex;
 }
+@media (max-width: 600px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+}
 .navbar-header{
    width: 100%;
    height: 50px;
@@ -122,6 +122,11 @@ body {
 .menu li {
    display: inline;
 }
+@media (max-width: 600px) {
+  .menu li {
+    font-size: 20px;
+  }
+}
 .menu li + li {
    margin-left: 35px;
 }
@@ -133,7 +138,7 @@ body {
    color: white;
 }
 #menu-select{
-   margin: 8px 0 8px 3px;
+   margin: 15px 0 15px 10px;
 }
 #funding-chart {
    margin: 15px auto;
