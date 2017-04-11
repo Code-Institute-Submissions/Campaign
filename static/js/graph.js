@@ -11,7 +11,7 @@ function makeGraphs(error, projectsJson) {
        d["date_posted"] = dateFormat.parse(d["date_posted"]);
        d["date_posted"].setDate(1);
        d["total_donations"] = +d["total_donations"];
-       //d["total_price_including_optional_support"] = +d["total_price_including_optional_support"];
+       d["total_price_including_optional_support"] = +d["total_price_including_optional_support"];
    });
  
  
@@ -37,9 +37,9 @@ function makeGraphs(error, projectsJson) {
    var fundingStatus = ndx.dimension(function (d) {
        return d["funding_status"];
    });
-   //var totalPriceIncDim = ndx.dimension(function (d) {
-    //   return d["total_price_including_optional_support"];
-   //});
+   var totalPriceIncDim = ndx.dimension(function (d) {
+       return d["total_price_including_optional_support"];
+   });
  
    //Calculate metrics
    var numProjectsByDate = dateDim.group();
@@ -54,9 +54,9 @@ function makeGraphs(error, projectsJson) {
    });
    var stateGroup = stateDim.group();
 
-   //var totalPriceIncByDate= dateDim.group().reduceSum(function(d) {
-    //   return d["total_price_including_optional_support"];
-    //});
+   var totalPriceIncByDate= dateDim.group().reduceSum(function(d) {
+       return d["total_price_including_optional_support"];
+    });
 
 
     var totalAverageDonations = ndx.groupAll().reduce(
@@ -89,7 +89,7 @@ function makeGraphs(error, projectsJson) {
    var maxDate = dateDim.top(1)[0]["date_posted"];
  
    //Charts
-   var timeChart = dc.lineChart("#time-chart");
+   var timeChart = dc.compositeChart("#time-chart");
    var resourceTypeChart = dc.rowChart("#resource-type-row-chart");
    var povertyLevelChart = dc.rowChart("#poverty-level-row-chart");
    var numberProjectsND = dc.numberDisplay("#number-projects-nd");
@@ -164,11 +164,23 @@ function makeGraphs(error, projectsJson) {
        .width(825)
        .height(200)
        .margins({top: 10, right: 50, bottom: 30, left: 50})
-       .dimension(dateDim)
-       .group(totalDonationsByDate)
+       //.dimension(dateDim)
+       .legend(dc.legend().x(70).y(10).itemHeight(10).gap(5))
+       .compose([
+            dc.lineChart(timeChart)
+                .dimension(dateDim)
+                .colors('rgb(61,196,130)')
+                .group(totalDonationsByDate, 'Total Donations'),
+            dc.lineChart(timeChart)
+                .dimension(dateDim)
+                .group(totalPriceIncByDate, 'Total Price Including Optional Support')
+                .colors('rgb(15,71,173)')
+            ])
+
+       //.group(totalDonationsByDate)
        .transitionDuration(500)
        .x(d3.time.scale().domain([minDate, maxDate]))
-       .brushOn(true)
+       .brushOn(false)
        .elasticY(true)
        .xAxisLabel("Year")
        .yAxis().tickFormat(d3.format("s")).ticks(4);

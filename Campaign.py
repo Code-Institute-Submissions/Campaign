@@ -9,20 +9,12 @@ app = Flask(__name__)
 MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
 DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorsUSA')
 
-#MONGODB_HOST = 'localhost'
-MONGODB_HOST = 'ds157740.mlab.com:57740'
+MONGODB_HOST = 'localhost'
+#MONGODB_HOST = 'ds157740.mlab.com:57740'
 MONGODB_PORT = 27017
-#DBS_NAME = 'donorsUSA'
-DBS_NAME = 'heroku_zpkh1ltv'
+DBS_NAME = 'donorsUSA'
+#DBS_NAME = 'heroku_zpkh1ltv'
 COLLECTION_NAME = 'projects'
-
-
-#'@app.route("/")
-#def index():
-#    """
-#    A Flask view to serve the main dashboard page.
-#    """
-#    return render_template("index.html")
 
 @app.route('/')
 def home():
@@ -40,7 +32,7 @@ def donor_projects():
     FIELDS = {
         '_id': False, 'funding_status': True, 'school_state': True,
         'resource_type': True, 'poverty_level': True,
-        'date_posted': True, 'total_donations': True
+        'date_posted': True, 'total_donations': True ,'total_price_including_optional_support':True
     }
 
     # Open a connection to MongoDB using a with statement such that the
