@@ -174,7 +174,7 @@ function makeGraphs(error, projectsJson) {
             dc.lineChart(timeChart)
                 .dimension(dateDim)
                 .group(totalPriceIncByDate, 'Total Price Including Optional Support')
-                .colors('rgb(15,71,173)')
+                .colors('#CC1520')
             ])
 
        //.group(totalDonationsByDate)
