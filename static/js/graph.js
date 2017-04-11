@@ -169,7 +169,7 @@ function makeGraphs(error, projectsJson) {
        .compose([
             dc.lineChart(timeChart)
                 .dimension(dateDim)
-                .colors('rgb(61,196,130)')
+                .colors("steelblue")
                 .group(totalDonationsByDate, 'Total Donations'),
             dc.lineChart(timeChart)
                 .dimension(dateDim)
