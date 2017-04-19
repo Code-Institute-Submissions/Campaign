@@ -209,10 +209,6 @@ body {
     font-size: 60px;
 }
 
-#outer {
-    margin: 0 5%;
-}
-
 .dc-chart g.row text {
     fill: black;
     font-size: 12px;
