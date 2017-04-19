@@ -5,7 +5,7 @@
     padding-right: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .home {
         flex-wrap: wrap;
     }
