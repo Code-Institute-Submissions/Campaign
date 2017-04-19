@@ -121,7 +121,7 @@ function makeGraphs(error, projectsJson) {
                         });
 
    statesChart
-        .width(850)
+        .width(800)
         .height(200)
         .transitionDuration(500)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
@@ -161,7 +161,7 @@ function makeGraphs(error, projectsJson) {
        .formatNumber(d3.format(".3s"));
 
  timeChart
-       .width(825)
+       .width(800)
        .height(200)
        .margins({top: 10, right: 50, bottom: 30, left: 50})
        //.dimension(dateDim)
