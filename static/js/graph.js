@@ -164,7 +164,6 @@ function makeGraphs(error, projectsJson) {
        .width(800)
        .height(200)
        .margins({top: 10, right: 50, bottom: 30, left: 50})
-       //.dimension(dateDim)
        .legend(dc.legend().x(70).y(10).itemHeight(10).gap(5))
        .compose([
             dc.lineChart(timeChart)
@@ -177,7 +176,6 @@ function makeGraphs(error, projectsJson) {
                 .colors('#CC1520')
             ])
 
-       //.group(totalDonationsByDate)
        .transitionDuration(500)
        .x(d3.time.scale().domain([minDate, maxDate]))
        .brushOn(false)
@@ -201,6 +199,7 @@ function makeGraphs(error, projectsJson) {
  
    fundingStatusChart
        .height(220)
+       .width(220)
        .radius(90)
        .innerRadius(40)
        .transitionDuration(1500)
