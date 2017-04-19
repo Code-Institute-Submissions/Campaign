@@ -11,6 +11,11 @@
     }
 }
 
+#funding-stage {
+    overflow-x: scroll;
+    display: flex;
+}
+
 #Education-info {
     text-align: center;
     padding: 10px 15% 20px 15%;
