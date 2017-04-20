@@ -24,6 +24,11 @@
 .home-title {
     font-size: 80px;
 }
+@media (max-width: 800px) {
+    .home-title {
+        font-size: 60px;
+    }
+}
 
 h3#thankyou {
     color: #999;
@@ -55,6 +60,11 @@ h3#thankyou {
 .home-info {
     text-align: center;
     padding: 20px 50px;
+}
+@media (max-width: 600px) {
+    .home-info {
+        padding: 20px 0px;
+    }
 }
 
 .footer {
