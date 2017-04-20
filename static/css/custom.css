@@ -188,6 +188,12 @@ body {
         margin-left: 15px;
     }
 }
+@media (max-width: 600px) {
+    .chart-stage {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .menu li a {
     color: #999;
