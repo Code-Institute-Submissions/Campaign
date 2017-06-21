@@ -1,4 +1,14 @@
-/********* Home page **********/
+/********* Index page **********/
+p.nav-governor {
+    color: #adadad;
+    margin-left: 6px;
+}
+
+@media (max-width: 600px) {
+    p.nav-governor {
+        display: none;
+    }
+}
 .container {
     padding: 0;
     margin: 0;
@@ -44,6 +54,8 @@ body.application {
         margin-left: 0 !important;
     }
 }
+
+/********* Home page **********/
 .box1, .box2,.box3,.box4,.box5,.box6 {
     height: 500px;
     display: flex;
@@ -120,7 +132,7 @@ body.application {
 }
 .aim-title {
     font-size: 60px;
-    color: white;
+    color: #333;
 }
 @media (max-width: 800px) {
     .aim-title {
@@ -178,17 +190,110 @@ p {
     margin: 20px;
 }
 
-/********* Stats page **********/
-
-#funding-stage {
-    overflow-x: scroll;
-    display: flex;
+.box-main {
+    width: 90%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px 10% 20px;
+    color: #333
 }
 
+
+/********* Stats page **********/
+.edbox1,.edbox2,.edbox3,.edbox4 {
+    height: inherit;
+    padding: 5%;
+}
+.edbox1 {
+    background: url(../images/img2.jpg) fixed;
+    padding-top: 130px;
+}
+.edbox2 {
+    background: url(../images/img7.jpg) fixed;
+}
+.edbox3 {
+    background: url(../images/img9.jpg) fixed;
+}
+.edbox4 {
+    background: url(../images/img1.png) fixed;
+}
 #Education-info {
     text-align: center;
     padding: 10px 15% 20px 15%;
+    font-size: 12px;
 }
+.Education-main {
+    background-color: rgba(255,255,255,0.8);
+    width: 90%;
+}
+.pick-state {
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+.long-chart {
+    max-width: 800px;
+}
+.graph-info {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 10%;
+}
+.bar-pie {
+    width: 300px;
+    height: 300px;
+}
+.bar-piecontent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 20px;
+}
+#funding-chart {
+    margin: 15px auto;
+}
+.funding-chart {
+    width: 270px;
+}
+.dc-select-menu {
+    height: 31px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+@media (min-width: 1200px) {
+    .number-graph-info {
+        height: 407px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .long-graph-info {
+        height: 508px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 1200px) {
+    .bar-pie-info {
+        height: 298px;
+        display: flex;
+        align-items: center;
+    }
+}
+.total-number-don {
+    background: #3182bd;;
+    position: relative;
+    font-size: 29px;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
+
+
+
 .Education-title {
     display: flex;
     align-items: flex-end;
@@ -221,16 +326,7 @@ p {
     font-weight: bold;
 }
 
-p.nav-governor {
-    color: #adadad;
-    margin-left: 6px;
-}
 
-@media (max-width: 600px) {
-    p.nav-governor {
-        display: none;
-    }
-}
 
 button.reset {
     height: 30px;
@@ -250,9 +346,6 @@ button.reset:hover {
     background-color: #333;
 }
 
-body {
-    /*min-width: 850px;*/
-}
 
 .menu {
     float: right;
@@ -301,9 +394,7 @@ body {
     border-radius: 4px;
 }
 
-#menu-select {
-    margin: 15px 0 15px 10px;
-}
+
 
 #funding-chart {
     margin: 15px auto;
@@ -336,32 +427,7 @@ body {
     padding-bottom: 0px;
 }
 
-.total-number-don {
-    background: #CC1520;
-    position: relative;
-    font-size: 29px;
-    vertical-align: middle;
-    color: white;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 0px;
-"
-}
 
-.dc-select-menu {
-    background: #CC1520;
-    width: 100%;
-    border: none;
-    position: relative;
-    height: 31px;
-    font-size: 15px;
-    color: white;
-    vertical-align: middle;
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 0px;
-
-}
 /******* Loader **********/
 .loader {
 	position: fixed;
