@@ -112,22 +112,22 @@ body.application {
         padding: 0 10%;
     }
 }
-.Sponsers {
+.Sponsors {
     display: flex;
     justify-content: center;
     padding: 20px 30% 0 30%;
 }
 @media (max-width: 600px) {
-    .Sponsers {
+    .Sponsors {
         padding: 20px 10px;
     }
 }
-.Sponser-pic > img {
+.Sponsor-pic > img {
     height: 60px;
     width: 60px;
     margin: 0 10px;
 }
-.sponser-title {
+.sponsor-title {
     font-size: 30px;
 }
 .aim-title {
