@@ -71,23 +71,48 @@ body.application {
 }
 @media (max-width: 600px) {
     .box1 {
-        padding: 130px 0 0 0;
+        padding: 90px 0 10px 0;
     }
 }
 .box2 {
     background: url("../images/img10.jpg") fixed;
 }
+@media (max-width: 800px) {
+    .box2 {
+        background: url("../images/img10.jpg") 50% 40%;
+    }
+}
 .box3 {
     background: url("../images/img4.jpg")  fixed;
+}
+@media (max-width: 800px) {
+    .box3 {
+        background: url("../images/img4.jpg") 50% 20%;
+    }
 }
 .box4 {
     background: url("../images/img5.jpg") fixed;
 }
+@media (max-width: 800px) {
+    .box4 {
+        background: url("../images/img5.jpg") 10% 50%;
+    }
+}
 .box5 {
     background: url("../images/img6.jpg") fixed;
 }
+@media (max-width: 800px) {
+    .box5 {
+        background: url("../images/img6.jpg") 35% 40%;
+    }
+}
 .box6 {
     background: url("../images/img3.jpg") fixed;
+}
+@media (max-width: 800px) {
+    .box6 {
+        background: url("../images/img3.jpg") 40% 30%;
+    }
 }
 .home-info {
     margin: 20px 0 30px 0;
@@ -207,14 +232,35 @@ p {
     background: url(../images/img2.jpg) fixed;
     padding-top: 130px;
 }
+@media (max-width: 800px) {
+    .edbox1 {
+        padding: 90px 0 10px 0;
+        background: url(../images/img2.jpg) 50% 100%;
+    }
+}
 .edbox2 {
     background: url(../images/img7.jpg) fixed;
 }
+@media (max-width: 800px) {
+    .edbox2 {
+        background: url(../images/img7.jpg) 10% 50%;
+    }
+}
 .edbox3 {
-    background: url(../images/img9.jpg) fixed;
+    background: url(../images/img9.jpg) fixed 100%;
+}
+@media (max-width: 800px) {
+    .edbox3 {
+        background: url(../images/img9.jpg) 60% 70%;
+    }
 }
 .edbox4 {
     background: url(../images/img1.png) fixed;
+}
+@media (max-width: 800px) {
+    .edbox4 {
+        background: url(../images/img1.png) 50% 100%;
+    }
 }
 #Education-info {
     text-align: center;
@@ -253,6 +299,12 @@ p {
 .funding-chart {
     width: 270px;
 }
+@media (max-width: 645px) {
+    .funding-chart {
+        width: 300px;
+    }
+}
+
 .dc-select-menu {
     height: 31px;
     font-size: 15px;
@@ -268,7 +320,8 @@ p {
 }
 @media (min-width: 1200px) {
     .long-graph-info {
-        height: 508px;
+        height: 541px;
+        margin-left: 20px;
         display: flex;
         align-items: center;
     }
