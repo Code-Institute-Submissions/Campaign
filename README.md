@@ -9,13 +9,13 @@ My second project involves large amounts of backend work, but most importantly..
 ### Campaign
 #### What the project does, needs it fulfills & functionality
 
-As I mentioned, I am currently running for presidency of USA. I created a simplistic campaign website where potential voters can quickly look through and get straight to viewing my main aims. It has a very smart and slick design to suit the level of presidency. I used large visual images for each main aim to make the site more powerful, as every part of the page has meaning for the campagin. 
+As I mentioned, I am currently running for presidency of USA. I created a simplistic campaign website where potential voters can quickly look through and get straight to viewing my main aims. It has a very smart and slick design to suit the level of presidency. I used large visual images for each main aim to make the site more powerful, as every part of the page has meaning for the campaign.
 
 The website is highly interactive to make the politics and information more interesting for potential voters who may not find the information interesting. When you hover over the aims (or click on a phone) it shows some rough information about what I aim to do about it. The navbar header grows when hovered so the user can see it more clearly and then on the Education page the graphs are highly interactive. 
 
-I produced a similar sectioned layout on the Education page with the interactivity continuing. Users can click the 'more' button to recieve a guided tour explaining what I am going to do to fix each issue shown on the graph. Alternatively, users can click the 'reset' button to reset all of the graphs.
+I produced a similar sectioned layout on the Education page with the interactivity continuing. Users can click the 'more' button to receive a guided tour explaining what I am going to do to fix each issue shown on the graph. Alternatively, users can click the 'reset' button to reset all of the graphs.
 
-Lastly there is also a loading page gif to display while the page is loading because with all the large image backgrounds, the page doesn't look complete whilst waiting for the main parts of the deisgn to load.
+Lastly there is also a loading page gif to display while the page is loading because with all the large image backgrounds, the page doesn't look complete whilst waiting for the main parts of the design to load.
 
 ----------------
 ### TECHNOLOGIES
@@ -45,7 +45,7 @@ Alot more technologies were used in this project compared to the other to get th
 
 * https://validator.w3.org/ - checked errors and went back and fixed if needed
 
-* I frequenty asked friends, family and peers to have a look trhough my website and give feedback on code, functionality or aesthetics that could be improved.
+* I frequently asked friends, family and peers to have a look through my website and give feedback on code, functionality or aesthetics that could be improved.
 
 * I constantly tested the website on different browsers as well as different size screens (Explained more below).
 
@@ -70,7 +70,7 @@ Alot more technologies were used in this project compared to the other to get th
 * One of my greatest challenges was getting the hang of the new technologies and how they worked with crossfilter. I spent a lot of time messing around and playing with it all so that I understood it. 
 * If you add too much data or too many crossfilter then the page runs very slowly. I quickly found this out the hard way and made sure I set a limit of 20000 results as well as limiting the crossfilters I used.
 * It was a challenge thinking of a new layout that would be smart enough for presidency but attractive enough for users of all backgrounds. I came up with the idea of seperating pages into sections with easy scroll throughs and only 2 pages. This allowed me to get straight to the point and keep it simplistic so that users wouldn't get bored by all the politics. 
-* Due to the graphs size and the crossfilter design, I focussed on a laptop first design. I used the large screen to create a visual story for the users with simplistic commentary that follows.
+* Due to the graphs size and the crossfilter design, I focused on a laptop first design. I used the large screen to create a visual story for the users with simplistic commentary that follows.
 * Great challenge designing an average donation number display. I kept adjusting the code, and after some time I got it working!
 * I aimed to make the website interactive to make the experience enjoyable and fit with the interactive crossfilter design. The header grows when hovered over so the user can see it clearly (because it's quite small). The titles for each aim have a feature that when hovered over, shows more information (and also on a phone when clicked).
 * Lastly, getting a nice photoshop of my face on to the president... it's harder than it looks!
