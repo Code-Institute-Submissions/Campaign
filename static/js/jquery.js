@@ -27,5 +27,9 @@ $(document).ready(function () {
         $('.hovered').addClass("hidebox");
         $('.non-hovered').removeClass("hidebox");
     });
+    $('.hovered').click(function () {
+        $('.hovered').addClass("hidebox");
+        $('.non-hovered').removeClass("hidebox");
+    });
 
 });
