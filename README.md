@@ -60,7 +60,7 @@ Alot more technologies were used in this project compared to the other to get th
 ----------------
 ### CREDIT
 
-* Credit to Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs. I used it to follow methods on how to build up a site using Flask.
+* Credit to Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs. I used it as a base for my site and to follow methods on how to build up a site using Flask.
 * Images were sourced from Pixabay (a free royalty-free images site) or created myself.
 
 ----------------
