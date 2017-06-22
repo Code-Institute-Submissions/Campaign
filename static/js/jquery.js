@@ -17,4 +17,14 @@ $(document).ready(function () {
         $('a.navbar-brand').animate({"font-size": "18px"});
     });
 
+
+    $('.non-hovered').mouseenter(function () {
+        $('.non-hovered').addClass("hidebox");
+        $('.hovered').removeClass("hidebox");
+    });
+    $('.hovered').mouseleave(function () {
+        $('.hovered').addClass("hidebox");
+        $('.non-hovered').removeClass("hidebox");
+    });
+
 });

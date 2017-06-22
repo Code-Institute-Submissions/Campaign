@@ -221,7 +221,9 @@ p {
     padding: 10px 10% 20px;
     color: #333
 }
-
+.hidebox {
+    display: none;
+}
 
 /********* Stats page **********/
 .edbox1,.edbox2,.edbox3,.edbox4 {
@@ -282,6 +284,7 @@ p {
 .graph-info {
     background-color: rgba(255,255,255,0.8);
     padding: 20px 10%;
+    font-size: 14px;
 }
 .bar-pie {
     width: 300px;
