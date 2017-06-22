@@ -1,12 +1,16 @@
 {% extends "index.html" %}
 {% block content %}
 
+    <!-- Initial Content: About, Reset/More buttons and drop down menu to select State -->
     <div class="edbox1">
 
+        <!-- About -->
         <div class="Education-main center-block">
             <div class="Education-title">
                 <h1>Education Stats</h1>
+                <!-- Reset graphs button -->
                 <button class="reset" type="button" onclick="javascript:dc.filterAll();dc.renderAll();">Reset</button>
+                <!-- Guided tour button -->
                 <button class="reset" type="button" autofocus onclick="javascript:introJs().start();">More</button>
             </div>
             <div id="Education-info">
@@ -21,7 +25,7 @@
                 graphs to interact and see the affect on other charts.
             </div>
         </div>
-        <!-- menu select -->
+        <!-- Select a State drop down menu -->
         <div class="chart-wrapper center-block pick-state">
             <div class="chart-title">
                 Donation State
@@ -30,21 +34,21 @@
                 <div id="menu-select"></div>
             </div>
         </div>
-        <!-- menu select -->
 
     </div>
 
 
-
-
-
+    <!-- Section 1: Long Graphs -->
     <div class="edbox2 col-lg-12">
+
+        <!-- Graphs -->
         <div class="col-lg-8 center-block">
-            <!-- Time Chart -->
+            <!-- Line Chart for the Total Donations over the years -->
             <div class="chart-wrapper long-chart center-block">
                 <div class="chart-title">
                     Total Donations per year
                 </div>
+                <!-- Chart with text for the guided tour -->
                 <div class="chart-stage" style="overflow-x:scroll;" data-step="1"
                      data-intro="Vote for me and I will guarantee a an increase in total donations.
                      The spike will continue throughout 2006 and onto 2007, keeping the line above the 500k mark."
@@ -52,13 +56,13 @@
                     <div id="time-chart"></div>
                 </div>
             </div>
-            <!-- Time Chart -->
 
-            <!-- State chart -->
+            <!-- State Chart for the Number of Donations per State -->
             <div class="chart-wrapper long-chart center-block">
                 <div class="chart-title">
                     Number of Donations per State
                 </div>
+                <!-- Chart with text for the guided tour -->
                 <div class="chart-stage" style="overflow-x:scroll;" data-step="2"
                      data-intro="Vote for me and I aim to even out the amount of donations across the country.
                      I will be working on states like Mississippi and Oklahoma to increase the number of donations."
@@ -66,8 +70,9 @@
                     <div id="map-chart"></div>
                 </div>
             </div>
-            <!-- State chart -->
         </div>
+
+        <!-- Charts Information -->
         <div class="col-lg-4 center-block">
             <p class="text-center graph-info center-block long-graph-info">
                 Click on the different states (or a group of states) to see the effect on total donations and total
@@ -84,11 +89,10 @@
     </div>
 
 
-
-
-
-
+    <!-- Section 2: Number Charts -->
     <div class="edbox3 col-lg-12">
+
+        <!-- Charts Information -->
         <div class="col-lg-6 center-block">
             <p class="text-center graph-info center-block number-graph-info">
                 Click on the other graphs, or even the drop down menu near the top of the page, to see the effect on
@@ -102,12 +106,15 @@
             </p>
         </div>
 
+        <!-- Graphs -->
         <div class="col-lg-6 center-block">
-            <!-- Metric 1 -->
+
+            <!-- Number display for total number of donations -->
             <div class="chart-wrapper center-block">
                 <div class="chart-title">
                     Total Number of Donations
                 </div>
+                <!-- Chart with text for the guided tour -->
                 <div class="chart-stage graph-center total-number-don" data-step="3"
                      data-intro="Vote for me and I will increase the total number of donations by 10%
                      by the following year."
@@ -115,13 +122,13 @@
                     <div id="number-projects-nd"></div>
                 </div>
             </div>
-            <!-- Metric 1 -->
 
-            <!-- Metric 2 -->
+            <!-- Number display for total number of donations -->
             <div class="chart-wrapper center-block">
                 <div class="chart-title">
                     Total Donations in USD
                 </div>
+                <!-- Chart with text for the guided tour -->
                 <div class="chart-stage graph-center" data-step="4"
                      data-intro="Vote for me and I will also increase the total donations by at least 5M by the
                      following year."
@@ -129,13 +136,13 @@
                     <div id="total-donations-nd"></div>
                 </div>
             </div>
-            <!-- Metric 2 -->
 
-            <!-- Metric 3 -->
+            <!-- Number display for average donation -->
             <div class="chart-wrapper center-block">
                 <div class="chart-title">
                     Average Donation in USD
                 </div>
+                <!-- Chart with text for the guided tour -->
                 <div class="chart-stage graph-center" data-step="5"
                      data-intro="Vote for me and I will aim to even out the average number of donations across all
                      the states."
@@ -143,64 +150,61 @@
                     <div id="average-donations-nd"></div>
                 </div>
             </div>
-            <!-- Metric 3 -->
+
         </div>
     </div>
 
 
-
-
-
+    <!-- Section 3: Bar and Pie charts -->
     <div class="edbox4 col-lg-12">
+
+        <!-- Graphs -->
         <div class="col-lg-9 center-block bar-piecontent">
-            <!-- Resources -->
-            <div>
-                <div class="chart-wrapper center-block bar-pie">
-                    <div class="chart-title">
-                        Resources Type
-                    </div>
-                    <div class="chart-stage graph-center" data-step="6"
-                         data-intro="Vote for me and I will aim to improve the resources to a level
+
+            <!-- Bar chart for the effect of different resource types on donations -->
+            <div class="chart-wrapper center-block bar-pie">
+                <div class="chart-title">
+                    Resources Type
+                </div>
+                <!-- Chart with text for the guided tour -->
+                <div class="chart-stage graph-center" data-step="6"
+                     data-intro="Vote for me and I will aim to improve the resources to a level
                          similar of Supplies."
-                         style="font-weight: normal" data-position="top">
-                        <div id="resource-type-row-chart"></div>
-                    </div>
+                     style="font-weight: normal" data-position="top">
+                    <div id="resource-type-row-chart"></div>
                 </div>
             </div>
-            <!-- Resources -->
 
-            <!-- Poverty -->
-            <div>
-                <div class="chart-wrapper center-block bar-pie">
-                    <div class="chart-title">
-                        Poverty Level
-                    </div>
-                    <div class="chart-stage graph-center" data-step="7"
-                         data-intro="Vote for me and I will focus on improving donation numbers
+            <!-- Bar chart for the effect of different Poverty levels on donations -->
+            <div class="chart-wrapper center-block bar-pie">
+                <div class="chart-title">
+                    Poverty Level
+                </div>
+                <!-- Chart with text for the guided tour -->
+                <div class="chart-stage graph-center" data-step="7"
+                     data-intro="Vote for me and I will focus on improving donation numbers
                          in lower poverty levels."
-                         style="font-weight: normal" data-position="top">
-                        <div id="poverty-level-row-chart"></div>
-                    </div>
+                     style="font-weight: normal" data-position="top">
+                    <div id="poverty-level-row-chart"></div>
                 </div>
             </div>
-            <!-- Poverty -->
 
-            <!-- funding Pie -->
-            <div>
-                <div class="chart-wrapper center-block bar-pie funding-chart">
-                    <div class="chart-title">
-                        Funding Status
-                    </div>
-                    <div class="chart-stage graph-center" id="funding-stage" data-step="8"
-                         data-intro="Vote for me and I will lower the amount of expired funding status' by 10%."
-                         style="font-weight: normal" data-position="top">
-                        <div id="funding-chart"></div>
-                    </div>
+            <!-- Pie chart for the effect of different Funding status' on donations -->
+            <div class="chart-wrapper center-block bar-pie funding-chart">
+                <div class="chart-title">
+                    Funding Status
+                </div>
+                <!-- Chart with text for the guided tour -->
+                <div class="chart-stage graph-center" id="funding-stage" data-step="8"
+                     data-intro="Vote for me and I will lower the amount of expired funding status' by 10%."
+                     style="font-weight: normal" data-position="top">
+                    <div id="funding-chart"></div>
                 </div>
             </div>
-            <!-- funding Pie -->
+
         </div>
 
+        <!-- Charts Information -->
         <div class="col-lg-3 center-block">
             <p class="text-center graph-info center-block bar-pie-info">
                 Click on the graphs to see the effect on Resource level, Poverty level and Funding status for the
@@ -210,7 +214,6 @@
         </div>
 
     </div>
-
 
 {% endblock %}
 

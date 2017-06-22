@@ -1,3 +1,5 @@
+/*** All media queries are directly below the code it's related to for an easy find when looking for code ***/
+
 /********* Index page **********/
 p.nav-governor {
     color: #adadad;
@@ -9,35 +11,43 @@ p.nav-governor {
         display: none;
     }
 }
+
 .container {
     padding: 0;
     margin: 0;
     width: 100%;
 }
+
 body.application {
     padding: 0;
     font-family: 'Montserrat';
 }
+
 .navbar-inverse {
     background-color: rgba(255, 255, 255, 0.8);
     border-color: transparent;
 }
+
 .navbar-brand:hover {
     color: black !important;
     font-weight: 300;
 }
+
 .navbar-brand {
     color: #333 !important;
     display: flex;
 }
+
 .for-president {
     margin: 0 0 10px 0;
 }
+
 @media (max-width: 600px) {
     .navbar-brand {
         font-size: 18px;
     }
 }
+
 .navbar-header {
     width: 100%;
     height: 50px;
@@ -47,6 +57,7 @@ body.application {
     flex-wrap: wrap;
     height: inherit;
 }
+
 @media (max-width: 600px) {
     .navbar-header {
         justify-content: center;
@@ -55,8 +66,16 @@ body.application {
     }
 }
 
+.header-hover1 {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.header-hover2 {
+    color: #333;
+}
+
 /********* Home page **********/
-.box1, .box2,.box3,.box4,.box5,.box6 {
+.box1, .box2, .box3, .box4, .box5, .box6 {
     height: 500px;
     display: flex;
     justify-content: center;
@@ -64,114 +83,139 @@ body.application {
     color: white;
     flex-direction: column;
 }
+
 .box1 {
     background: url("../images/flag2.png") fixed;
     height: inherit;
     padding: 90px 5% 2% 5%;
 }
+
 @media (max-width: 600px) {
     .box1 {
         padding: 90px 0 10px 0;
     }
 }
+
 .box2 {
     background: url("../images/img10.jpg") fixed;
 }
+
 @media (max-width: 800px) {
     .box2 {
         background: url("../images/img10.jpg") 50% 40%;
     }
 }
+
 .box3 {
-    background: url("../images/img4.jpg")  fixed;
+    background: url("../images/img4.jpg") fixed;
 }
+
 @media (max-width: 800px) {
     .box3 {
         background: url("../images/img4.jpg") 50% 20%;
     }
 }
+
 .box4 {
     background: url("../images/img5.jpg") fixed;
 }
+
 @media (max-width: 800px) {
     .box4 {
         background: url("../images/img5.jpg") 10% 50%;
     }
 }
+
 .box5 {
     background: url("../images/img6.jpg") fixed;
 }
+
 @media (max-width: 800px) {
     .box5 {
         background: url("../images/img6.jpg") 35% 40%;
     }
 }
+
 .box6 {
     background: url("../images/img3.jpg") fixed;
 }
+
 @media (max-width: 800px) {
     .box6 {
         background: url("../images/img3.jpg") 40% 30%;
     }
 }
+
 .home-info {
     margin: 20px 0 30px 0;
     text-align: center;
     padding: 0 10%;
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 50px 0 0 0;
     padding-top: 40px;
     padding-bottom: 50px;
 }
+
 @media (max-width: 370px) {
-    .home-info{
+    .home-info {
         margin: 35px 0 0 0;
     }
 }
+
 .about-info {
     padding: 0 30%;
 }
+
 @media (max-width: 700px) {
     .about-info {
         padding: 0 10%;
     }
 }
+
 .Sponsors {
     display: flex;
     justify-content: center;
     padding: 20px 30% 0 30%;
 }
+
 @media (max-width: 600px) {
     .Sponsors {
         padding: 20px 10px;
     }
 }
+
 .Sponsor-pic > img {
     height: 60px;
     width: 60px;
     margin: 0 10px;
 }
+
 .sponsor-title {
     font-size: 30px;
 }
+
 .aim-title {
     font-size: 60px;
     color: #333;
 }
+
 @media (max-width: 800px) {
     .aim-title {
         font-size: 30px;
     }
 }
+
 a:-webkit-any-link, a {
     text-decoration: none;
 }
+
 .home-title {
     font-size: 70px;
     font-family: Montserrat;
     margin-top: 5px;
 }
+
 @media (max-width: 800px) {
     .home-title {
         font-size: 60px;
@@ -195,14 +239,17 @@ h3#thankyou {
     width: 250px;
     height: 250px;
     filter: grayscale(1);
-    border: solid thin rgba(0,0,0,0.8)
+    border: solid thin rgba(0, 0, 0, 0.8)
 }
+
 p {
     font-size: 12px;
 }
+
 .navbar-brand > p {
     font-size: 14px;
 }
+
 .social-med {
     height: 20px;
     width: 20px;
@@ -217,91 +264,110 @@ p {
 
 .box-main {
     width: 90%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 10% 20px;
     color: #333
 }
+
 .hidebox {
     display: none;
 }
 
 /********* Stats page **********/
-.edbox1,.edbox2,.edbox3,.edbox4 {
+.edbox1, .edbox2, .edbox3, .edbox4 {
     height: inherit;
     padding: 5%;
 }
+
 .edbox1 {
     background: url(../images/img2.jpg) fixed;
     padding-top: 130px;
 }
+
 @media (max-width: 800px) {
     .edbox1 {
         padding: 90px 0 10px 0;
         background: url(../images/img2.jpg) 50% 100%;
     }
 }
+
 .edbox2 {
     background: url(../images/img7.jpg) fixed;
 }
+
 @media (max-width: 800px) {
     .edbox2 {
         background: url(../images/img7.jpg) 10% 50%;
     }
 }
+
 .edbox3 {
     background: url(../images/img9.jpg) fixed 100%;
 }
+
 @media (max-width: 800px) {
     .edbox3 {
         background: url(../images/img9.jpg) 60% 70%;
     }
 }
+
 .edbox4 {
     background: url(../images/img1.png) fixed;
 }
+
 @media (max-width: 800px) {
     .edbox4 {
         background: url(../images/img1.png) 50% 100%;
     }
 }
+
 #Education-info {
     text-align: center;
     padding: 10px 15% 20px 15%;
     font-size: 12px;
 }
+
 .Education-main {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 90%;
 }
+
 .pick-state {
     width: 200px;
     text-align: center;
     margin-top: 20px;
 }
+
 .long-chart {
     max-width: 800px;
 }
+
 .graph-info {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 10%;
     font-size: 14px;
 }
+
 .bar-pie {
     width: 300px;
     height: 300px;
 }
+
 .bar-piecontent {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
     margin-bottom: 20px;
 }
+
 #funding-chart {
     margin: 15px auto;
 }
+
 .funding-chart {
     width: 270px;
 }
+
 @media (max-width: 645px) {
     .funding-chart {
         width: 300px;
@@ -313,6 +379,7 @@ p {
     font-size: 15px;
     border-radius: 5px;
 }
+
 @media (min-width: 1200px) {
     .number-graph-info {
         height: 407px;
@@ -321,6 +388,7 @@ p {
         margin-right: 20px;
     }
 }
+
 @media (min-width: 1200px) {
     .long-graph-info {
         height: 541px;
@@ -329,6 +397,7 @@ p {
         align-items: center;
     }
 }
+
 @media (min-width: 1200px) {
     .bar-pie-info {
         height: 298px;
@@ -336,6 +405,7 @@ p {
         align-items: center;
     }
 }
+
 .total-number-don {
     background: #3182bd;;
     position: relative;
@@ -346,9 +416,6 @@ p {
     padding-top: 12px;
     padding-bottom: 0px;
 }
-
-
-
 
 .Education-title {
     display: flex;
@@ -382,8 +449,6 @@ p {
     font-weight: bold;
 }
 
-
-
 button.reset {
     height: 30px;
     margin-left: 20px;
@@ -401,7 +466,6 @@ button.reset {
 button.reset:hover {
     background-color: #333;
 }
-
 
 .menu {
     float: right;
@@ -435,6 +499,7 @@ button.reset:hover {
         margin-left: 15px;
     }
 }
+
 .graph-center {
     display: flex;
     justify-content: center;
@@ -449,8 +514,6 @@ button.reset:hover {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
 }
-
-
 
 #funding-chart {
     margin: 15px auto;
@@ -483,14 +546,13 @@ button.reset:hover {
     padding-bottom: 0px;
 }
 
-
 /******* Loader **********/
 .loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('../images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loading.gif') 50% 50% no-repeat rgb(249, 249, 249);
 }
