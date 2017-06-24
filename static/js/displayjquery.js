@@ -5,7 +5,6 @@ $(document).ready(function () {
         $(this).animate({"padding": "10px 20px"});
         $('.navbar-inverse').addClass('header-hover1');
         $('.nav-governor').addClass('header-hover2');
-        $('.menu > li > a').animate({"padding": "10px 40px"});
         $('ul.menu').animate({"font-size": "18px"});
         $('a.navbar-brand').animate({"font-size": "20px"});
     });
@@ -13,7 +12,6 @@ $(document).ready(function () {
         $(this).animate({"padding": "5px 20px"});
         $('.navbar-inverse').removeClass('header-hover1');
         $('.nav-governor').removeClass('header-hover2');
-        $('.menu > li > a').animate({"padding": "0px"});
         $('ul.menu').animate({"font-size": "14px"});
         $('a.navbar-brand').animate({"font-size": "18px"});
     });

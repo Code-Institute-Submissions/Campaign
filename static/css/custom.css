@@ -48,6 +48,16 @@ body.application {
     }
 }
 
+@media (max-width: 1330px) {
+    .long-chart-scroll {
+        overflow-x: scroll !important;
+    }
+}
+
+.chart-stage {
+    font-weight: normal
+}
+
 .navbar-header {
     width: 100%;
     height: 50px;
@@ -71,7 +81,7 @@ body.application {
 }
 
 .header-hover2 {
-    color: #333;
+    color: #333 !important;
 }
 
 /********* Home page **********/
@@ -391,7 +401,7 @@ p {
 
 @media (min-width: 1200px) {
     .long-graph-info {
-        height: 541px;
+        height: 508px;
         margin-left: 20px;
         display: flex;
         align-items: center;
@@ -513,6 +523,12 @@ button.reset:hover {
 .menu > li > a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
+}
+
+@media (min-width: 1000px) {
+    .menu > li > a {
+        padding: 10px 40px;
+    }
 }
 
 #funding-chart {

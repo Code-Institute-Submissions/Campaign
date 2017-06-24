@@ -9,16 +9,7 @@ app = Flask(__name__)
 MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
 DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorsUSA')
 
-# Used for testing the data locally
-# MONGODB_HOST = 'localhost'
-# DBS_NAME = 'donorsUSA'
-
-# Used for running the website on heroku
-MONGODB_HOST = 'ds157740.mlab.com:57740'
-MONGODB_PORT = 27017
-DBS_NAME = 'heroku_zpkh1ltv'
 COLLECTION_NAME = 'projects'
-
 
 # Routes for each page and the template to render (inside 'templates' folder).
 @app.route('/')

@@ -28,9 +28,9 @@ Alot more technologies were used in this project compared to the other to get th
 * HTML
 * JavaScript
 * jQuery
-* Flask -*Microframework for Python*
-* Mongo DB - *NoSQL Database storing and presenting the data in JSON format*
-* D3.js
+* [Flask](flask.pocoo.org) -*Microframework for Python*
+* [Mongo DB](https://www.mongodb.com/) - *NoSQL Database storing and presenting the data in JSON format*
+* [D3.js](https://d3js.org/)
 * Dc.js
 * Crossfilter.js
 * Queue.js
@@ -73,6 +73,8 @@ Alot more technologies were used in this project compared to the other to get th
 * Due to the graphs size and the crossfilter design, I focused on a laptop first design. I used the large screen to create a visual story for the users with simplistic commentary that follows.
 * Great challenge designing an average donation number display. I kept adjusting the code, and after some time I got it working!
 * I aimed to make the website interactive to make the experience enjoyable and fit with the interactive crossfilter design. The header grows when hovered over so the user can see it clearly (because it's quite small). The titles for each aim have a feature that when hovered over, shows more information (and also on a phone when clicked).
+* To make sure the graphs were visible on mobile or Ipad display, I created an option for horizontal scrolling. I made sure to hide the scroll bar when displayed on larger screen sizes so it looks more clean.
+* I did think about taking away the transparency on the header to make it clearer when the user scrolls, but I preferred the design without. I felt the transparency on the header kept a more smart look to the site.
 * Lastly, getting a nice photoshop of my face on to the president... it's harder than it looks!
 
 ----------------

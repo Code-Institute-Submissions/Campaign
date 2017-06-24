@@ -150,7 +150,7 @@ function makeGraphs(error, projectsJson) {
         .width(800)
         .height(200)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
-        .legend(dc.legend().x(70).y(10).itemHeight(10).gap(5))
+        .legend(dc.legend().x(320).y(10).itemHeight(10).gap(5))
         .compose([
             dc.lineChart(timeChart)
                 .dimension(dateDim)

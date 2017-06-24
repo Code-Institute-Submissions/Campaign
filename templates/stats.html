@@ -9,14 +9,15 @@
             <div class="Education-title">
                 <h1>Education Stats</h1>
                 <!-- Reset graphs button -->
-                <button class="reset" type="button" onclick="javascript:dc.filterAll();dc.renderAll();">Reset</button>
+                <button class="reset" type="button" onclick="dc.filterAll();dc.renderAll();">Reset</button>
                 <!-- Guided tour button -->
-                <button class="reset" type="button" autofocus onclick="javascript:introJs().start();">More</button>
+                <button class="reset" type="button" autofocus onclick="introJs().start();">More</button>
             </div>
             <div id="Education-info">
                 The key aim I hope to work on is Education. This affects not only our future, but also our children's
                 and grandchildren's. After thoroughly looking through statistics, I have developed plans for how I will
-                improve Education across the country.
+                improve Education across the country. To add donations or be added to our mailing list, please email <a
+                    href="mailto:bm4president@whitehouse.com">bm4president@whitehouse.com</a>.
                 <br><br>
                 Please see below for the the various ideas I have lined up or click <b>'More'</b> for a guided tour. If
                 you
@@ -49,10 +50,10 @@
                     Total Donations per year
                 </div>
                 <!-- Chart with text for the guided tour -->
-                <div class="chart-stage" style="overflow-x:scroll;" data-step="1"
+                <div class="chart-stage long-chart-scroll" data-step="1"
                      data-intro="Vote for me and I will guarantee a an increase in total donations.
                      The spike will continue throughout 2006 and onto 2007, keeping the line above the 500k mark."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="time-chart"></div>
                 </div>
             </div>
@@ -63,10 +64,10 @@
                     Number of Donations per State
                 </div>
                 <!-- Chart with text for the guided tour -->
-                <div class="chart-stage" style="overflow-x:scroll;" data-step="2"
+                <div class="chart-stage long-chart-scroll" data-step="2"
                      data-intro="Vote for me and I aim to even out the amount of donations across the country.
                      I will be working on states like Mississippi and Oklahoma to increase the number of donations."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="map-chart"></div>
                 </div>
             </div>
@@ -79,11 +80,11 @@
                 donations including optional support. If you hover over the bars or a point on the line graph, it will
                 more specific numbers.
                 <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                As you can see the total number of donations were steadily rising over the years until a sudden drop in
+                April. I aim to create a steadily increasing number of donations across the next year so that they can
+                be correctly used by schools. The drastic difference in the number of donations for each state is
+                tremendous. I guarantee to increasing funding in states with lower donations whilst keeping and not
+                disturbing the high level in others.
             </p>
         </div>
     </div>
@@ -99,10 +100,10 @@
                 the total number of donations, total number of donations and average donation for the state. The data on
                 this page is from 20000 different donation with the average donation across the country being 405.
                 <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
+                We can see from this that even though states like Texas have a low total number of donations, the
+                average donations are over double that of states with a large number of total donations such as New
+                York. I aim not only to increase the total number of donations in states like Texas, but also focus on
+                improving the average donations in various states such as New York.
             </p>
         </div>
 
@@ -118,7 +119,7 @@
                 <div class="chart-stage graph-center total-number-don" data-step="3"
                      data-intro="Vote for me and I will increase the total number of donations by 10%
                      by the following year."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="number-projects-nd"></div>
                 </div>
             </div>
@@ -132,7 +133,7 @@
                 <div class="chart-stage graph-center" data-step="4"
                      data-intro="Vote for me and I will also increase the total donations by at least 5M by the
                      following year."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="total-donations-nd"></div>
                 </div>
             </div>
@@ -146,7 +147,7 @@
                 <div class="chart-stage graph-center" data-step="5"
                      data-intro="Vote for me and I will aim to even out the average number of donations across all
                      the states."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="average-donations-nd"></div>
                 </div>
             </div>
@@ -170,7 +171,7 @@
                 <div class="chart-stage graph-center" data-step="6"
                      data-intro="Vote for me and I will aim to improve the resources to a level
                          similar of Supplies."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="resource-type-row-chart"></div>
                 </div>
             </div>
@@ -184,7 +185,7 @@
                 <div class="chart-stage graph-center" data-step="7"
                      data-intro="Vote for me and I will focus on improving donation numbers
                          in lower poverty levels."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="poverty-level-row-chart"></div>
                 </div>
             </div>
@@ -197,7 +198,7 @@
                 <!-- Chart with text for the guided tour -->
                 <div class="chart-stage graph-center" id="funding-stage" data-step="8"
                      data-intro="Vote for me and I will lower the amount of expired funding status' by 10%."
-                     style="font-weight: normal" data-position="top">
+                     data-position="top">
                     <div id="funding-chart"></div>
                 </div>
             </div>
@@ -217,3 +218,14 @@
 
 {% endblock %}
 
+{% block graphscripts %}
+    <!-- JS: Not my code -->
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js') }}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/intro.js') }}" type="text/javascript"></script>
+    <!-- JS: My code -->
+    <script src="{{ url_for ('static', filename='js/graph.js') }}"></script>
+{% endblock %}
