@@ -74,7 +74,7 @@ Alot more technologies were used in this project compared to the other to get th
 * Great challenge designing an average donation number display. I kept adjusting the code, and after some time I got it working!
 * I aimed to make the website interactive to make the experience enjoyable and fit with the interactive crossfilter design. The header grows when hovered over so the user can see it clearly (because it's quite small). The titles for each aim have a feature that when hovered over, shows more information (and also on a phone when clicked).
 * To make sure the graphs were visible on mobile or Ipad display, I created an option for horizontal scrolling. I made sure to hide the scroll bar when displayed on larger screen sizes so it looks more clean.
-* I did think about taking away the transparency on the header to make it clearer when the user scrolls, but I preferred the design without. I felt the transparency on the header kept a more smart look to the site.
+* I thought about taking away the transparency on the header to make it clearer when the user scrolls, but I preferred the design without as it adds a more smart look to the site. So I made the body of the site darken when the header was hovered over to make it clearer even when scrolled over light graphs.
 * Lastly, getting a nice photoshop of my face on to the president... it's harder than it looks!
 
 ----------------

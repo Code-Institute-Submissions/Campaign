@@ -21,6 +21,7 @@ p.nav-governor {
 body.application {
     padding: 0;
     font-family: 'Montserrat';
+    background: black;
 }
 
 .navbar-inverse {
@@ -29,8 +30,7 @@ body.application {
 }
 
 .navbar-brand:hover {
-    color: black !important;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .navbar-brand {
@@ -77,11 +77,27 @@ body.application {
 }
 
 .header-hover1 {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-hover2 {
     color: #333 !important;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+}
+
+@media (min-width: 1000px) {
+    .menu > li > a {
+        padding: 10px 40px;
+    }
 }
 
 /********* Home page **********/
@@ -513,22 +529,6 @@ button.reset:hover {
 .graph-center {
     display: flex;
     justify-content: center;
-}
-
-.menu li a {
-    color: #333;
-    text-decoration: none;
-}
-
-.menu > li > a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 4px;
-}
-
-@media (min-width: 1000px) {
-    .menu > li > a {
-        padding: 10px 40px;
-    }
 }
 
 #funding-chart {
