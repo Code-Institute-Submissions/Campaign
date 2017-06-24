@@ -11,6 +11,7 @@ DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorsUSA')
 
 COLLECTION_NAME = 'projects'
 
+
 # Routes for each page and the template to render (inside 'templates' folder).
 @app.route('/')
 def home():
