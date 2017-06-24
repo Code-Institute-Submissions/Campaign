@@ -9,7 +9,8 @@ $(document).ready(function () {
         $('.nav-governor').addClass('header-hover2');
         $('ul.menu').animate({"font-size": "18px"});
         $('a.navbar-brand').animate({"font-size": "20px"});
-        $('.container').animate({"opacity": "0.4"});
+        $('.container').addClass('opacitycontainer');
+        $('body.application').addClass('darkbody').show(1500);
     });
     $('.navbar-header').mouseleave(function () {
         $(this).animate({"padding": "5px 20px"});
@@ -17,7 +18,8 @@ $(document).ready(function () {
         $('.nav-governor').removeClass('header-hover2');
         $('ul.menu').animate({"font-size": "14px"});
         $('a.navbar-brand').animate({"font-size": "18px"});
-        $('.container').animate({"opacity": "1"})
+        $('.container').removeClass('opacitycontainer');
+        $('body.application').removeClass('darkbody').show(1500);
     });
 
     // Hover over each different 'Aim' title and it shows more information

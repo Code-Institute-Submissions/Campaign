@@ -21,7 +21,14 @@ p.nav-governor {
 body.application {
     padding: 0;
     font-family: 'Montserrat';
-    background: black;
+}
+
+.darkbody {
+    background: black !important;
+}
+
+.opacitycontainer {
+    opacity: 0.4;
 }
 
 .navbar-inverse {
