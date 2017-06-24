@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // Hover over the header and it grows and changes colour.
-    // Also, the main body background color darkens
+    // Also, the main body background colour darkens
     // so that you can see the transparent header clearly when scrolled down.
     $('.navbar-header').mouseenter(function () {
         $(this).animate({"padding": "10px 20px"});
